@@ -1,5 +1,6 @@
 <?php include ("includes/header.php"); ?>
 <?php include ("includes/navigation.php"); ?>
+<?php include ("includes/init.php"); ?>
 <div id="layoutSidenav">
             <?php include ("includes/sidebar.php"); ?>
             <div id="layoutSidenav_content">
@@ -10,6 +11,12 @@
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                         <div class="row">
+                            <?php
+
+                                $result = $database->Query("SELECT * FROM users WHERE user_ID=1");
+                                $user_found = $result->fetch_object();
+                                echo $user_found->username;
+                            ?>
                             <?php include ("includes/content.php"); ?>
                         </div>
                 </main>
