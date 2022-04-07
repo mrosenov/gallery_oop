@@ -1,6 +1,12 @@
 <?php include ("includes/header.php"); ?>
 <?php include ("includes/navigation.php"); ?>
-<?php include("init.php"); ?>
+<?php
+
+if (!$session->is_signed_in()){
+    redirect("login.php");
+}
+
+?>
 <div id="layoutSidenav">
             <?php include ("includes/sidebar.php"); ?>
             <div id="layoutSidenav_content">
@@ -31,10 +37,12 @@
                             foreach ($users as $user){
                                 echo $user->username . "<br>";
                             }*/
-                            $user = User::find_user_by_id(2);
-                            echo $user->username;
+/*                            $user = User::find_user_by_id(2);
+                            echo $user->username;*/
+
                             ?>
                         </div>
+                        <a href="logout.php">Log Out</a>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">

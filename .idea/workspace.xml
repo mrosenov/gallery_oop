@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b7411e-e445-44d4-b4d6-baee7be8ff67" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/init.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/content.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/db_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/configs/db_connection.php" afterDir="false" />
@@ -13,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/admin/includes/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/navigation.php" afterDir="false" />
@@ -41,6 +44,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Softwares\xampp\htdocs\gallery\admin\css" />
       <recent name="D:\Softwares\xampp\htdocs\gallery\admin" />
       <recent name="D:\Softwares\xampp\htdocs\gallery\admin\lib" />
       <recent name="D:\Softwares\xampp\htdocs\gallery\admin\configs" />
@@ -54,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649338863371</updated>
-      <workItem from="1649338864713" duration="7608000" />
+      <workItem from="1649338864713" duration="16652000" />
     </task>
     <servers />
   </component>

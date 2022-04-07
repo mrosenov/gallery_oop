@@ -1,7 +1,7 @@
 <?php
 
 class User {
-    public $id;
+    public $user_ID;
     public $username;
     public $password;
     public $firstname;
@@ -18,13 +18,7 @@ class User {
 
         $the_result_array = self::find_this_query("SELECT * FROM users WHERE user_ID = '$user_id'");
         return !empty($the_result_array) ? array_shift($the_result_array) : false;
-/*        if (!empty($the_result_array)){
-            $first_item = array_shift($the_result_array);
-            return $first_item;
-        }else{
-            return false;
-        }*/
-        return $found_user;
+
     }
 
     public static function find_this_query($sql){
@@ -38,13 +32,21 @@ class User {
         return $the_object_array;
     }
 
+    public static function verify_user($username, $password){
+        global $database;
+
+        $username = $database->escape_string($username);
+        $password = $database->escape_string($password);
+
+        $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password' LIMIT 1";
+
+        $the_result_array = self::find_this_query($sql);
+        return !empty($the_result_array) ? array_shift($the_result_array) : false;
+
+    }
+
     public static function instantation($the_record){
         $the_object = new self;
-//        $the_object->id = $found_user['user_ID'];
-//        $the_object->username = $found_user['username'];
-//        $the_object->password = $found_user['password'];
-//        $the_object->firstname = $found_user['firstname'];
-//        $the_object->lastname = $found_user['lastname'];
         foreach ($the_record as $the_attribute => $value){
             if ($the_object->has_the_attribute($the_attribute)){
                 $the_object->$the_attribute = $value;
@@ -60,5 +62,4 @@ class User {
 
 }
 $database = new Database;
-
 ?>
