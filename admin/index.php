@@ -1,6 +1,6 @@
 <?php include ("includes/header.php"); ?>
 <?php include ("includes/navigation.php"); ?>
-<?php include ("includes/init.php"); ?>
+<?php include("init.php"); ?>
 <div id="layoutSidenav">
             <?php include ("includes/sidebar.php"); ?>
             <div id="layoutSidenav_content">
@@ -11,13 +11,29 @@
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                         <div class="row">
-                            <?php
-
-                                $result = $database->Query("SELECT * FROM users WHERE user_ID=1");
-                                $user_found = $result->fetch_object();
-                                echo $user_found->username;
-                            ?>
                             <?php include ("includes/content.php"); ?>
+                            <?php
+/*                            $user = new User();
+                            $result_set = User::find_all_users();
+
+                            while ($row = mysqli_fetch_array($result_set)){
+                                echo $row['username'] . "<br>";
+                            }*/
+                            //Method by ID
+/*                            $found_user = User::find_user_by_id(2);
+                            echo $found_user['username'];
+                            */
+                            /*$found_user = User::find_user_by_id(2);
+                            $user = User::instantation($found_user);
+                            echo $user->username;*/
+
+/*                            $users = User::find_all_users();
+                            foreach ($users as $user){
+                                echo $user->username . "<br>";
+                            }*/
+                            $user = User::find_user_by_id(2);
+                            echo $user->username;
+                            ?>
                         </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
